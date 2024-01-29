@@ -1,0 +1,37 @@
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .navbar-end .btn {
+    display: none;
+  }
+  .navbar-start #texthockey {
+    font-size: 30px;
+  }
+  .banner #bennertext {
+    padding: 15px;
+  }
+  #bennertext p {
+    font-size: 12px;
+  }
+
+  #col11,
+  #col12,
+  #col13,
+  #col14 {
+    grid-column: span 10 / span 10;
+  }
+  #col12 {
+    grid-column-start: 1;
+  }
+  #col13 {
+    grid-column-start: 1;
+  }
+
+  #col14 {
+    grid-column-start: 2;
+  }
+  .footer {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+}

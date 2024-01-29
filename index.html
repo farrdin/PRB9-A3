@@ -21,6 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- CSS LINK  -->
+<link rel="stylesheet" href="responsive.css">
     <style>
       body{
         font-family: 'Manrope', sans-serif;
@@ -63,7 +65,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="text-4xl font-extrabold text-[#131318] hover:-300border-red border-transparent border-2 rounded-md p-1 cursor-default">Hockey<span class="text-[#FF4240]">’</span>s</a>
+            <a id="texthockey" class="text-4xl font-extrabold text-[#131318] hover:-300border-red border-transparent border-2 rounded-md p-1 cursor-default">Hockey<span class="text-[#FF4240]">’</span>s</a>
           </div>
           <div class="navbar-center hidden lg:flex ">
             <ul class="menu menu-horizontal px-1  ">
@@ -84,37 +86,37 @@
         <div class="carousel w-full ">
   <div id="slide1" class="carousel-item relative w-full">
     <img src="Images/15.png" class="w-full rounded-3xl" />
-    <div class=" transform -translate-y-1/2 absolute left-52 bottom-0  lg:absolute lg:left-5  lg:right-5 lg:bottom-2 space-x-1">
+    <div class="absolute space-x-1  -translate-x-1/2 left-1/2 lg:translate-x-1/2 lg:left-[-2%] bottom-[5%] ">
       <a href="#slide4" class="btn btn-circle  bg-black text-white">❮</a>
       <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
     </div>
   </div>
   <div id="slide2" class="carousel-item relative w-full">
     <img src="Images/14.png" class="w-full rounded-3xl" />
-    <div class="transform -translate-y-1/2 left-5 right-5 bottom-2 space-x-1 absolute left-52 bottom-0  lg:absolute lg:left-5  lg:right-5 lg:bottom-2 space-x-1">
+    <div class="absolute space-x-1  -translate-x-1/2 left-1/2 lg:translate-x-1/2 lg:left-[-2%] bottom-[5%]">
       <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a>
       <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
     </div>
   </div>
   <div id="slide3" class="carousel-item relative w-full">
     <img src="Images/13.png" class="w-full rounded-3xl" />
-    <div class="transform -translate-y-1/2 left-5 right-5 bottom-2 space-x-1 absolute left-52 bottom-0  lg:absolute lg:left-5  lg:right-5 lg:bottom-2 space-x-1">
+    <div class="absolute space-x-1  -translate-x-1/2 left-1/2 lg:translate-x-1/2 lg:left-[-2%] bottom-[5%]">
       <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a>
       <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
     </div>
   </div>
   <div id="slide4" class="carousel-item relative w-full ">
     <img src="Images/16.png" class="w-full rounded-3xl" />
-    <div class="transform -translate-y-1/2 left-5 right-5 bottom-2 space-x-1 absolute left-52 bottom-0  lg:absolute lg:left-5  lg:right-5 lg:bottom-2 space-x-1">
+    <div class="absolute space-x-1  -translate-x-1/2 left-1/2 lg:translate-x-1/2 lg:left-[-2%] bottom-[5%]">
       <a href="#slide3" class="btn btn-circle  bg-black text-white">❮</a>
       <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
     </div>
   </div>
-</div>
-<div class="lg:w-[566px] h-[150px] lg:absolute bottom-8 right-8 bg-[#131318] rounded-xl p-8">
-  <h3 class="sm:text-xl lg:text-2xl text-white font-semibold pb-2">Meet all the heroes from the field</h3>
-  <p class="sm:text-sm lg:text-base text-[#ffffff99]  font-medium">"Unveiling the Extraordinary Stories and Achievements of Our Diverse and Inspiring Heroes - Join the Celebration!"</p>
-</div>
+        </div>
+          <div id="bennertext" class="lg:w-[566px] h-[150px] lg:absolute bottom-[5%] right-[2%]  bg-[#131318] rounded-xl p-8">
+          <h3 class="sm:text-xl lg:text-2xl text-white font-semibold pb-2">Meet all the heroes from the field</h3>
+          <p class="sm:text-sm lg:text-base text-[#ffffff99]  font-medium">"Unveiling the Extraordinary Stories and Achievements of Our Diverse and Inspiring Heroes - Join the Celebration!"</p>
+        </div>
       </div>
     </header>
     <main>
@@ -443,8 +445,8 @@
     </main>
     </div>
     <footer class="bg-[#131318] p-20">
-    <div class="footer w-10/12 m-auto   text-white grid grid-cols-5 lg:gap-24">
-        <nav class="Getin flex flex-col items-center lg:items-start mx-auto col-span-5 lg:col-span-2 pb-10">
+    <div class="footer w-10/12 mx-auto   text-white grid grid-cols-10 lg:gap-20">
+        <nav id="col11" class="Getin flex flex-col items-center lg:items-start mx-auto col-span-10 lg:col-span-4 pb-10">
           <h3 class="font-bold text-3xl pb-5" >Get In Touch</h3>
           <p class="text-base text-center lg:text-left text-[#ffffff99] pb-5">
            "ConnectWithUs: Reach Out for Inquiries,<br> Collaborations, or Support - We're Here to <br> Assist and Enhance Your Experience."
@@ -462,21 +464,21 @@
             <span> (+62) 123321543 </span>
           </div>
         </nav>
-        <nav class="Companyy flex flex-col items-center col-start-2 col-span-2 lg:items-start lg:col-span-1 ">
+        <nav id="col12" class="Companyy flex flex-col items-center col-span-5  items-center lg:items-start lg:col-span-2 ">
           <header class="text-[#fff] font-bold text-lg pb-5">Company</header>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">About Us</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Leadership</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Carrers</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">New & Article </a>
         </nav>
-        <nav class="Supportt flex flex-col items-center col-start-4 col-span-2 lg:items-start  lg:col-span-1">
+        <nav id="col13" class="Supportt flex flex-col   col-span-5 col-start-8 items-center lg:items-start  lg:col-span-2">
           <header class="text-[#fff] font-bold text-lg pb-5 px-5 lg:px-0">Support</header>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Help Center</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">FAQ</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Ticket Support</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Contact Us</a>
         </nav>
-        <nav class="Servicess flex flex-col items-center lg:items-start mx-auto col-span-5 lg:col-span-1 ">
+        <nav id="col14" class="Servicess flex flex-col  col-span-10 items-center lg:items-start mx-auto  lg:col-span-2 ">
           <header class="text-[#fff] font-bold text-lg pb-5">Services</header>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Academy</a>
           <a class="link link-hover text-[#ffffff99] text-base font-medium leading-7">Group Lesson</a>
